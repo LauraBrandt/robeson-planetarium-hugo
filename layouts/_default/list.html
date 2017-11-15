@@ -1,14 +1,39 @@
+{{ define "head" }}
+    <style>
+        #content a.panel {
+            text-decoration: none; 
+            color: inherit;
+            display: block;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+        }
+        #content a.panel:hover {
+            text-decoration: none; 
+            color: inherit;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        #content .panel h2 {
+            margin: 7px; 
+            font-size: 1.4em;
+        }
+        #content .panel-body {
+            padding: 20px; 
+            font-size: 1.15em;
+        }
+    </style>
+{{ end }}
+
 {{ define "content" }}
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <div class="main-content">{{ .Content }}</div>
 
     {{ range .Pages }}
-        <div style="border: 1px solid black; margin:10px; padding:10px; ">
-            <div style="font-size:20px;">
-                <a href="{{.URL}}">{{.Title}}</a>
-            </div>          
-            <p style="font-size:18px;">{{.Summary}}</p>
-        </div>
+        <a href="{{.URL}}" class="panel panel-default">            
+            <div class="panel-heading">
+                <h2>{{.Title}}</h2>
+            </div>
+            <div class="panel-body">
+                <p>{{.Summary}} . . .</p>
+            </div>
+        </a>
     {{ end }}
-    
 {{ end }}
