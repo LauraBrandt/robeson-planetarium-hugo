@@ -2,5 +2,5 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 status: "upcoming"
-showsDates: []
+showDates: []
 ---
