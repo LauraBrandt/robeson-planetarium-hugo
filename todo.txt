@@ -3,6 +3,8 @@
 
 - list.html of _default - for posts, news
 
+- showsDates -> showDates in archetype, layout, and all front matters
+
 - responsive design
 
 - when site built, in home index.html, need to change readDir path from "/static/images/slideshow" to "/images/slideshow" ?
