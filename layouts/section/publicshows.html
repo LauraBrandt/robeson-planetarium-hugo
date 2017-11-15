@@ -1,0 +1,38 @@
+{{ define "head" }}<link rel="stylesheet" type="text/css" href="/css/publicshows.css">{{ end }}
+
+{{ define "content" }}
+    <h1>{{ .Title }}</h1>
+    <div id="intro">{{ .Content }}</div>
+
+    {{ $upcoming := where .Site.Pages "Params.status" "upcoming" }}
+    {{ if gt (len $upcoming) 0 }}
+        <h2>Upcoming shows:</h2>
+        <ul>
+            {{ range $upcoming }}
+                <li>
+                    <h4>{{ .Title }}</h4>
+                    <div>{{ .Content }}</div>
+                    <div class="date well well-sm">
+                        <p class="when">When:</p>
+                        {{ range .Params.showsDates }}
+                            <p>{{ (time .).Format "Monday, January 02 at 3:04 pm" }}</p>
+                        {{ end }}
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+    {{ end }}
+
+    {{ $previous := where .Site.Pages "Params.status" "previous" }}
+    {{ if gt (len $previous) 0 }}
+        <h2>Previous shows:</h2>
+        <ul>
+            {{ range $previous }}
+                <li>
+                    <h4>{{ .Title }}</h4>
+                    <div>{{ .Content }}</div>
+                </li>
+            {{ end }}
+        </ul>
+    {{ end }}
+{{ end }}

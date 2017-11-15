@@ -1,0 +1,18 @@
+{{ $context := .context }}
+{{ $from := int .from }}
+{{ $fromMonth := int .fromMonth }}
+{{ $to := int .to }}
+{{ $toMonth := int .toMonth }}
+
+{{ $months := seq 12 }}
+{{ $context.Scratch.Add "consideredYears" (slice $from $to) }}
+
+{{ range ($context.Scratch.Get "consideredYears") }}
+    {{ $year := . }}
+    {{ $isLeapYear := (modBool $year 4) }}
+    {{ range $months }}
+        {{ if or (and (eq $year $from) (ge . $fromMonth)) (and (eq $year $to) (le . $toMonth))  }}
+            {{ partial "calendar/month" (dict "context" $context "year" $year "isLeapYear" $isLeapYear "month" .) (string (delimit (slice $year .) "")) }}
+        {{ end }}
+    {{ end }}
+{{ end }}

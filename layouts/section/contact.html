@@ -1,0 +1,44 @@
+{{ define "head" }} <link rel="stylesheet" type="text/css" href="/css/contact.css"> {{ end }}
+
+{{ define "content" }}
+    <h1>{{ .Title }}</h1>
+    <div id="reservations">
+        <h3>For reservations and other information, call or email {{ .Params.person }}:</h3>
+        <h4>{{ .Params.phone }}</h4>
+        <h4><a href='mailto:"{{ .Params.person }}" <{{ .Params.email }}>'>{{ .Params.email }}</a></h4>
+    </div>
+    <hr>
+    <div id="directions">
+        <h3>Directions:</h3>
+        <p class="address">{{ .Params.address1 }}</p>
+        <p class="address">{{ .Params.address2 }}</p>
+        <iframe class="map" width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key={{ .Site.Params.googleMapsApiKey }}&q=Robeson+Planetarium,Lumberton+NC&zoom=15" allowfullscreen></iframe>
+        <p>{{ .Params.directions }}</p>
+    </div>
+    <hr>
+    <div id="staff">
+        <h2>Our Team</h2>
+        {{ range .Pages }}
+            {{ if and (isset .Params "imagesrc") (ne .Params.imageSRC "") }}
+                <div class="person row">
+                    <div class="col-sm-2 imgcontainer">
+                        <img class="profilepic img-responsive" src="/images/people/{{ .Params.imageSRC }}" alt="{{ .Params.name }}" height="120" width="120">
+                    </div>
+                    <div class="col-sm-10">
+                        <h3 class="name">{{ .Params.name }}</h3>
+                        <h4 class="title">{{ .Params.position }}</h4>
+                        <p class="phone">{{ .Params.phone }}</p>
+                        <a class="email" href='mailto:"{{ .Params.name }}" <{{ .Params.email }}>'>{{ .Params.email }}</a>
+                    </div>
+                </div>
+            {{ else }}
+                <div class="person row">
+                    <h3 class="name">{{ .Params.name }}</h3>
+                    <h4 class="title">{{ .Params.position }}</h4>
+                    <p class="phone">{{ .Params.phone }}</p>
+                    <a class="email" href='mailto:"{{ .Params.name }}" <{{ .Params.email }}>'>{{ .Params.email }}</a>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+{{ end }}

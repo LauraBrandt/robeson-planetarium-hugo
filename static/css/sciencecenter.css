@@ -1,0 +1,31 @@
+#intro {
+    margin-bottom: 5%;
+}
+
+#all-exhibits {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-wrap: wrap;
+    -webkit-box-wrap: wrap;
+    -ms-flexbox-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#all-exhibits .exhibit {
+    margin-bottom: 6%;
+}
+
+#all-exhibits h4 {
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+#all-exhibits img {
+    margin: auto; 
+    max-width: 75%;
+}

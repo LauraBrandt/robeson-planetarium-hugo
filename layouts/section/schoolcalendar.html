@@ -1,0 +1,28 @@
+{{ define "head" }}<link rel="stylesheet" type="text/css" href="/css/schoolcalendar.css">{{ end }}
+
+{{ define "content" }}
+    {{ if le (now.Format "02") "07" }}
+        {{ .Scratch.Set "startYear" ((now.AddDate -1 0 0).Format "2006") }}
+        {{ .Scratch.Set "endYear" (now.Format "2006") }}
+    {{ else }}
+        {{ .Scratch.Set "startYear" (now.Format "2006") }}
+        {{ .Scratch.Set "endYear" ((now.AddDate 1 0 0).Format "2006") }}
+    {{ end }}
+
+    <h1>{{ .Scratch.Get "startYear"}}-{{ .Scratch.Get "endYear"}} Calendar</h1>
+    <div id="intro">{{ .Content }}</div>
+
+    <div id="calendar">
+        {{ partial "calendar" (dict "context" . "from" (.Scratch.Get "startYear") "fromMonth" 8 "to" (.Scratch.Get "endYear") "toMonth" 7) }}
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // toggle between right and down carets on click
+            $("thead>tr").click(function() {
+                $(this).find(".toggle").toggle();
+            });
+        });
+    </script>
+    
+{{ end }}

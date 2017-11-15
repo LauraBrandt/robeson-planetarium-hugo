@@ -1,0 +1,9 @@
+- optimize images (just the global ones)
+- redo favicon
+
+- list.html of _default - for posts, news
+
+- responsive design
+
+- when site built, in home index.html, need to change readDir path from "/static/images/slideshow" to "/images/slideshow" ?
+- also when site built, in config.toml change the baseURL

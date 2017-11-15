@@ -1,0 +1,33 @@
+#intro {
+	margin-bottom: 4%;
+}
+
+#content ul {
+    list-style: none;
+    margin-bottom: 6%;
+    padding-left: 3%;
+}
+
+#content li {
+    margin-bottom: 5%;
+}
+
+#content li h4 {
+    margin-bottom: 1.5%;
+    font-weight: bold;
+}
+
+#content .date {
+    font-weight:bold;
+    margin-top: 2%;
+}
+
+#content .date p {
+    margin: 0;
+    padding-left:2%;
+}
+
+#content .date p.when {
+    padding-left: 0;
+    padding-bottom: 0.5%;
+}

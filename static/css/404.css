@@ -1,0 +1,26 @@
+#content {
+    text-align: center;
+}
+
+#content h1 {
+    font-size: 7em;
+    margin: 3% 0 1% 0;
+    font-weight: normal;
+}
+
+#content h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+#content p {
+    margin: 5%;
+    font-size: 1.4em;
+    color: #444;
+}
+
+#content a {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+}

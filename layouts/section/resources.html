@@ -1,0 +1,26 @@
+{{ define "head" }}<link rel="stylesheet" type="text/css" href="/css/resources.css">{{ end }}
+
+{{ define "content" }}
+
+    <h1>{{ .Title }}</h1>
+    <div id="intro">{{ .Content }}</div>
+
+    {{ range .Pages.ByDate.Reverse }}
+        <div class="resource">
+            <h3>{{ .Title }}</h3>
+            <p class="by"><span>by </span><span class="author">{{ .Params.author }}</span></p>
+            <div class="description">{{ .Content }}</div>
+            <p class="file">            
+                <a href="{{ .Params.fileLink | relURL }}" target="_blank">
+                    {{ if and (isset .Params "type") (ne .Params.type "other") }}
+                        {{ $iconPath := .Params.type | printf "/images/file-icons/%s.png" }}
+                        <img class="file-icon" src="{{ $iconPath }}">
+                    {{ end }}
+                    {{ .Params.fileLink | strings.TrimPrefix "resource_files/" }}
+                </a>
+                <span class="size">{{ .Params.size }}</span>
+            </p>
+        </div>
+    {{ end }}
+
+{{ end }}

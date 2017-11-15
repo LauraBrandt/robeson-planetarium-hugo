@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ if .IsHome }}Robeson Planetarium{{ else }}{{ .Title }} | Robeson Planetarium{{ end }}</title>
+        {{ .Hugo.Generator }}
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Muli:400,700|Roboto:400,700|Roboto+Slab">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        {{ block "head" . }}{{ end }}
+    </head>
+    <body>
+        <div class="container">
+            {{ partialCached "header.html" . }}
+            {{ partial "navbar.html" . }}
+            <div id="content">
+                {{ block "content" . }}
+                {{ end }}
+            </div>
+            {{ partialCached "footer.html" . }}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+{{ $context := .context }}
+{{ $year := .year }}
+{{ $isLeapYear := .isLeapYear }}
+{{ $month := .month }}
+
+{{ if and $isLeapYear (eq $month 2) }}
+    {{ $month := "2-leap" }}
+{{ end }}
+
+{{ $monthInLetters := dateFormat "January" (string (delimit (slice $year "-" (printf "%02d" $month) "-01") ""))  }}
+
+{{ $daysPerMonth := dict "1" (seq 31) "2" (seq 28) "2-leap" (seq 29) "3" (seq 31) "4" (seq 30) "5" (seq 31) "6" (seq 30) "7" (seq 31) "8" (seq 31) "9" (seq 30) "10" (seq 31) "11" (seq 30) "12" (seq 31) }}
+{{ $daysThisMonth := index $daysPerMonth (string $month) }}
+
+<table class="table table-hover table-bordered" id="{{ $monthInLetters }}">
+    <thead>
+        <tr data-toggle="collapse" data-target="#{{ $monthInLetters }}-collapse">
+            <th colspan="2">
+                <i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+                <i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display: none;"></i>
+                <p>{{ $monthInLetters }} {{ $year }}</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody class="collapse" id="{{ $monthInLetters }}-collapse">
+        {{ range $daysThisMonth }}
+            {{ $day := . }}
+            {{ $dateString := (string (delimit (slice $year (printf "%02d" $month) (printf "%02d" $day)) "-")) }}
+            {{ $weekdayInLetters := dateFormat "Monday" $dateString }}
+            {{ if le (time $dateString) now }}
+                {{ $context.Scratch.Set "isPast" true }}
+            {{ else }}
+                {{ $context.Scratch.Set "isPast" false }}
+            {{ end }}
+            <tr class='
+                    {{ if or (eq $weekdayInLetters "Saturday") ((eq $weekdayInLetters "Sunday")) }}weekend {{ end }}
+                    {{ if and (eq (string $month) (now.Format "1")) (eq (string $day) (now.Format "2")) }}today {{ end }}
+                    {{ if $context.Scratch.Get "isPast" }}past {{ end }}
+                    ' >
+                <td>
+                    {{ $weekdayInLetters }}
+                    <br>
+                    {{ $month }}/{{ $day }}
+                </td>
+                <td>
+                    <!-- 
+                    Two methods to get the content for each date:
+                    1) use the .toml files in the data/ folder and enter the text for each day
+                    2) create an entry in the content/schoolcalendar/ folder named YYYY-MM-DD.md and in front matter "event" enter the text for that day
+                    -->
+
+                    {{ index (index $context.Site.Data.calendar (printf "m%d" $month)) (string $day) }}
+                    <!-- {{ with $context.Site.GetPage "page" (printf "schoolcalendar/%s.md" $dateString) }}
+                        {{ .Params.event }}
+                    {{ end }} -->
+                </td>
+            </tr>            
+        {{ end }}
+    </tbody>
+</table>
