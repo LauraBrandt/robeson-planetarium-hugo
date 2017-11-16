@@ -29,3 +29,19 @@
     margin: auto; 
     max-width: 75%;
 }
+
+@media screen and (max-width: 767px) {
+    #intro {
+        margin-bottom: 10%;
+    }
+    #all-exhibits {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    #all-exhibits .exhibit {
+        margin-bottom: 10%;
+    }
+}
+

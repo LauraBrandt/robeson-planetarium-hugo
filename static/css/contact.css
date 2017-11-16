@@ -47,3 +47,23 @@ hr {
 #staff .imgcontainer {
     padding: 2% 0;
 }
+
+@media screen and (max-width: 767px) {
+    #intro {
+        margin-bottom: 10%;
+    }
+
+    #directions .map {
+        width: 100%;
+    }
+    hr {
+        margin: 10% 0;
+    }
+    #staff .person {
+        margin: 3% 0;
+        word-wrap: break-word;
+    }
+    #staff .imgcontainer {
+        padding: 0;
+    }
+}

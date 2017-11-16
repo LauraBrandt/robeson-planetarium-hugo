@@ -23,15 +23,16 @@
     <div id="news">
         <h2>What's Going On</h2>
         {{ range where .Data.Pages.ByDate.Reverse "Section" "news" }}
-            <div class="row story">
-                <div class="col-sm-3">
+            <div class="story">
+                <div class="img-container">
                     <img class="img-responsive newsimg" src="/images/news/{{ .Params.imageSRC }}" width="150" height="150" alt="{{ .Params.imageALT }}">
                 </div>
-                <div class="col-sm-9 text">
+                <div class="text">
                     <h5>{{ .Title }}</h5>
                     <div>{{ .Content }}</div>
                 </div>
             </div>
         {{ end }}
+
     </div>
 {{ end }}

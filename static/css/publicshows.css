@@ -31,3 +31,9 @@
     padding-left: 0;
     padding-bottom: 0.5%;
 }
+
+@media screen and (max-width: 767px) {
+    #intro {
+        margin-bottom: 10%;
+    }
+}

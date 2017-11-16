@@ -30,3 +30,9 @@
     padding-left: 10px;
     font-size: 0.95em;
 }
+
+@media screen and (max-width: 767px) {
+    .resource {
+        margin-bottom: 10%;
+    }
+}

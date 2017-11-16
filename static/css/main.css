@@ -1,8 +1,10 @@
 body {
 	background: #333 url("../images/spaceswirldoubled.jpg") repeat-y;
-	background-size:100%;
+	background-size: 100%;
 	overflow-x: hidden;
 	font-family: "Roboto Slab", "Times New Roman", serif;
+	padding: 0;
+	margin: 0;
 }
 
 .container {
@@ -18,7 +20,8 @@ body {
 	}
 
 	.container {
-		width: 100%;
+		width: 98%;
+		margin: 0 auto;
 	}
 }
 
@@ -44,18 +47,29 @@ header .col {
 
 #logo {
 	margin: 4% 6%;
+	max-width: 100%
 }
 
 #psrclogo {
-	margin-top: 5%;
+	margin-top: 5%;	
+	max-width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-	header .col-sm-9 {
-		width: 100%;
+@media screen and (max-width: 500px) {
+	header {
+		margin: 0;
+		padding: 0 3%;
 	}
-	header .col-sm-3 {
+	header .col-xs-8 {
+		width: 95%;
+	}
+
+	header .col-xs-4 {
 		display: none;
+	}
+
+	#logo {
+		margin: 4% 2%;
 	}
 }
 
@@ -69,6 +83,10 @@ header .col {
 	min-height: 2em;
 }
 
+#myNavbar {
+	padding: 0;
+}
+
 #myNavbar ul {
 	width: 100%;
 	display: -webkit-box;
@@ -79,11 +97,10 @@ header .col {
 	-ms-justify-content: space-between;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 #myNavbar ul li a {
-	/*padding: 0.7em 1.8em;*/
 	color: #eee;
 	font-weight: 600;
 }
@@ -96,7 +113,17 @@ header .col {
 #myNavbar .current {
 	background-color: #ddd;	
 	color: #1D3595;
-	font-weight: 800;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+	#myNavbar ul {
+		-webkit-flex-direction: column;
+		flex-direction: column;		
+		margin-left: 0;
+	}
+	#myNavbar ul li a {
+	}
 }
 
 /******************* MAIN CONTENT *******************/
@@ -129,6 +156,20 @@ header .col {
 	margin: 3% 0 2% 0;
 	font-family: Lato, Helvetica, sans-serif;
 	font-size: 1.8rem;
+}
+
+@media screen and (max-width: 500px) {
+	#content {
+		padding-bottom: 10%;
+	}
+	#content h1 {
+		font-size: 2.6rem;
+		margin: 5% 0 8% 0;
+	}
+	#content h2 {
+		margin: 9% 0 6% 0;
+		font-size: 2.3rem;
+	}
 }
 
 /******************* FOOTER *******************/
@@ -169,7 +210,7 @@ header .col {
 }
 #contact .facebook img {
 	margin: 4% auto;
-	width: 13%;
+	width: 35px;
 }
 #contact p.psrc {
 	font-size: 1.4rem;
@@ -189,10 +230,44 @@ header .col {
 #affiliates .five { max-width: 26%; }
 
 #copyright {
-	border: 1px solid rgba(0, 0, 0, 0);	
+	border: 1px solid rgba(184, 98, 98, 0);	
 }
 
 #copyright p {
 	margin-top: -3%;
 	color: #FFD80E;
+}
+
+@media screen and (max-width: 767px) {
+	#footer {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+	#contact {
+		margin-top: 3%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	#contact p {
+		text-align: left;
+	}
+	#contact .facebook {
+		margin: -75px 15% 0 15%;
+		float: right;
+	}
+	#contact p.psrc {
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 7%;
+	}
+	#affiliates .one { max-width: 25%; }
+	#affiliates .two { max-width: 22.5%; }
+	#affiliates .three { max-width: 50%; }
+	#affiliates .four { max-width: 34%; }
+	#affiliates .five { max-width: 34%; }
+
+	#copyright p {
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
 }

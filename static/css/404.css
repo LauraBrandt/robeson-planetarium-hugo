@@ -24,3 +24,23 @@
     font-size: 1.2em;
     margin-bottom: 5%;
 }
+
+@media screen and (max-width: 500px) {
+    #content h1 {
+        font-size: 5em;
+        margin: 5% 0;
+    }    
+    #content h2 {
+        font-size: 1.3em;
+    }
+    
+    #content p {
+        margin: 15% 13%;
+        font-size: 1em;
+    }
+    
+    #content a {
+        font-size: 0.9em;
+        margin-bottom: 15%;
+    }
+}

@@ -21,10 +21,10 @@
         {{ range .Pages }}
             {{ if and (isset .Params "imagesrc") (ne .Params.imageSRC "") }}
                 <div class="person row">
-                    <div class="col-sm-2 imgcontainer">
+                    <div class="col-sm-2 col-xs-3 imgcontainer">
                         <img class="profilepic img-responsive" src="/images/people/{{ .Params.imageSRC }}" alt="{{ .Params.name }}" height="120" width="120">
                     </div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10 col-xs-9">
                         <h3 class="name">{{ .Params.name }}</h3>
                         <h4 class="title">{{ .Params.position }}</h4>
                         <p class="phone">{{ .Params.phone }}</p>
