@@ -1,7 +1,7 @@
 ---
 title: "365 Days of Astronomy Podcast"
 date: 2017-11-10T19:58:02-03:00
-imageSRC: "365astronomy.jpg"
+imageSRC: "images/uploads/news/365astronomy.jpg"
 imageALT: "Logo of 365 Days of Astronomy"
 ---
 

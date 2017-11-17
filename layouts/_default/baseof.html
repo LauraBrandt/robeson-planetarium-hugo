@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Muli:400,600,700|Roboto:400,700|Roboto+Slab">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         {{ block "head" . }}{{ end }}
     </head>
     <body>
@@ -24,6 +25,17 @@
                 {{ end }}
             </div>
             {{ partialCached "footer.html" . }}
+            <script>
+                if (window.netlifyIdentity) {
+                  window.netlifyIdentity.on("init", function(user) {
+                    if (!user) {
+                      window.netlifyIdentity.on("login", function() {
+                        document.location.href = "/admin/";
+                      });
+                    }
+                  });
+                }
+              </script>
         </div>
     </body>
 </html>

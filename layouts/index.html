@@ -25,11 +25,13 @@
         {{ range where .Data.Pages.ByDate.Reverse "Section" "news" }}
             <div class="story">
                 <div class="img-container">
-                    <img class="img-responsive newsimg" src="/images/news/{{ .Params.imageSRC }}" width="150" height="150" alt="{{ .Params.imageALT }}">
+                    {{ if .Params.imageSRC }}
+                        <img class="img-responsive newsimg" src="{{ .Params.imageSRC | relURL }}" width="150" height="150" {{if .Params.imageALT}}alt="{{ .Params.imageALT }}"{{end}}>
+                    {{ end }}                    
                 </div>
                 <div class="text">
                     <h5>{{ .Title }}</h5>
-                    <div>{{ .Content }}</div>
+                    {{ with .Content }}<div>{{ . }}</div>{{ end }}
                 </div>
             </div>
         {{ end }}

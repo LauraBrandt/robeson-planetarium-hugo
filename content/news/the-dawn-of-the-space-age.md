@@ -1,7 +1,7 @@
 ---
 title: "Public Show - The Dawn of the Space Age"
 date: 2017-11-10T20:00:12-03:00
-imageSRC: "spaceage.jpg"
+imageSRC: "images/uploads/news/spaceage.jpg"
 imageALT: "astronaut from the show"
 ---
 

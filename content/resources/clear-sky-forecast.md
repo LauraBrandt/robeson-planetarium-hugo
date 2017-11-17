@@ -2,9 +2,8 @@
 title: "Clear Sky Forecast"
 date: 2017-11-10T13:12:51-03:00
 author: "cleardarksky.com"
-fileLink: "http://cleardarksky.com/c/RbsnPntNCkey.html"
-type: "other"
-size: ""
+website: "http://cleardarksky.com/c/RbsnPntNCkey.html"
+type: "website"
 weight: 1
 ---
 

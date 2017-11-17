@@ -2,9 +2,8 @@
 title: "Free Star Map"
 date: 2017-11-10T13:11:55-03:00
 author: "www.skymaps.com"
-fileLink: "http://www.skymaps.com/downloads.html"
-type: "other"
-size: ""
+website: "http://www.skymaps.com/downloads.html"
+type: "website"
 weight: 12
 ---
 

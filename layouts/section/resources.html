@@ -1,24 +1,41 @@
-{{ define "head" }}<link rel="stylesheet" type="text/css" href="/css/resources.css">{{ end }}
+{{ define "head" }}
+    <link rel="stylesheet" type="text/css" href="/css/resources.css">
+    <script src="/src/convertFileSizes.js" type="text/javascript"></script>
+{{ end }}
 
 {{ define "content" }}
 
     <h1>{{ .Title }}</h1>
     <div id="intro">{{ .Content }}</div>
 
+    {{ $path := "/static/images/uploads/resources" }}
+    {{ $relPath := "images/uploads/resources/"}}
+    {{ $files := readDir $path }}
+
     {{ range .Pages.ByDate.Reverse }}
         <div class="resource">
+            {{ $page := . }}
             <h3>{{ .Title }}</h3>
-            <p class="by"><span>by </span><span class="author">{{ .Params.author }}</span></p>
-            <div class="description">{{ .Content }}</div>
-            <p class="file">            
-                <a href="{{ .Params.fileLink | relURL }}" target="_blank">
-                    {{ if and (isset .Params "type") (ne .Params.type "other") }}
-                        {{ $iconPath := .Params.type | printf "/images/file-icons/%s.png" }}
-                        <img class="file-icon" src="{{ $iconPath }}">
+            {{ with .Params.author }}<p class="by"><span>by </span><span class="author">{{ . }}</span></p> {{ end }}
+            {{ with .Content }}<div class="description">{{ . }}</div>{{ end }}
+            <p class="file">
+                {{ with .Params.website }}
+                    <a href="{{ . }}" target="_blank">{{ . }}</a>
+                {{ end }}
+                {{ with .Params.fileLink }}
+                    {{ range $files }}
+                        {{ if eq .Name ($page.Params.fileLink | strings.TrimPrefix $relPath) }}
+                            <a href="{{ $page.Params.fileLink | relURL }}" target="_blank">                        
+                                {{ $iconPath := printf "/images/file-icons/%s.png" $page.Params.type }}
+                                {{ if (fileExists (printf "static/%s" $iconPath)) }}
+                                    <img class="file-icon" src="{{ $iconPath }}">
+                                {{ end }}
+                                {{ .Name }}
+                            </a>                    
+                            <span class="size">{{ .Size }}</span>
+                        {{ end }}
                     {{ end }}
-                    {{ .Params.fileLink | strings.TrimPrefix "resource_files/" }}
-                </a>
-                <span class="size">{{ .Params.size }}</span>
+                {{ end }}
             </p>
         </div>
     {{ end }}

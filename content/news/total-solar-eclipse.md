@@ -1,7 +1,7 @@
 ---
 title: "Total Solar Eclipse"
 date: 2017-11-10T19:51:54-03:00
-imageSRC: "eclipsemap.jpg"
+imageSRC: "images/uploads/news/eclipsemap.jpg"
 imageALT: "Map of the path of totality of the eclipse in NC/SC"
 ---
 

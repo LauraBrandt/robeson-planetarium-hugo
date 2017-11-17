@@ -49,10 +49,10 @@
                     2) create an entry in the content/schoolcalendar/ folder named YYYY-MM-DD.md and in front matter "event" enter the text for that day
                     -->
 
-                    {{ index (index $context.Site.Data.calendar (printf "m%d" $month)) (string $day) }}
-                    <!-- {{ with $context.Site.GetPage "page" (printf "schoolcalendar/%s.md" $dateString) }}
+                    <!-- {{ index (index $context.Site.Data.calendar (printf "m%d" $month)) (string $day) }} -->
+                    {{ with $context.Site.GetPage "page" (printf "schoolcalendar/%s.md" $dateString) }}
                         {{ .Params.event }}
-                    {{ end }} -->
+                    {{ end }}
                 </td>
             </tr>            
         {{ end }}

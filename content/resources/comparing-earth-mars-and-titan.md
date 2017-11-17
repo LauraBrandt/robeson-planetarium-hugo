@@ -2,9 +2,8 @@
 title: "Comparing Earth, Mars, and Titan: Earth/Environmental Science"
 date: 2017-11-10T14:43:50-03:00
 author: "Ken Brandt"
-fileLink: "resource_files/earth_mars_titan_9th_grade.doc"
-type: "doc"
-size: "24.50 KB"
+fileLink: "images/uploads/resources/earth_mars_titan_9th_grade.doc"
+type: "document"
 weight: 8
 ---
 

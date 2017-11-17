@@ -19,24 +19,24 @@
     <div id="staff">
         <h2>Our Team</h2>
         {{ range .Pages }}
-            {{ if and (isset .Params "imagesrc") (ne .Params.imageSRC "") }}
+            {{ if .Params.imageSRC }}
                 <div class="person row">
                     <div class="col-sm-2 col-xs-3 imgcontainer">
-                        <img class="profilepic img-responsive" src="/images/people/{{ .Params.imageSRC }}" alt="{{ .Params.name }}" height="120" width="120">
+                        <img class="profilepic img-responsive" src="{{ .Params.imageSRC | relURL }}" alt="{{ .Params.name }}" height="120" width="120">
                     </div>
                     <div class="col-sm-10 col-xs-9">
                         <h3 class="name">{{ .Params.name }}</h3>
-                        <h4 class="title">{{ .Params.position }}</h4>
-                        <p class="phone">{{ .Params.phone }}</p>
-                        <a class="email" href='mailto:"{{ .Params.name }}" <{{ .Params.email }}>'>{{ .Params.email }}</a>
+                        {{ with .Params.position }}<h4 class="title">{{ . }}</h4>{{ end }}
+                        {{ with .Params.phone }}<p class="phone">{{ . }}</p>{{ end }}
+                        {{ if .Params.email }}<a class="email" href='mailto:"{{ .Params.name }}" <{{ .Params.email }}>'>{{ .Params.email }}</a>{{ end }}
                     </div>
                 </div>
             {{ else }}
                 <div class="person row">
                     <h3 class="name">{{ .Params.name }}</h3>
-                    <h4 class="title">{{ .Params.position }}</h4>
-                    <p class="phone">{{ .Params.phone }}</p>
-                    <a class="email" href='mailto:"{{ .Params.name }}" <{{ .Params.email }}>'>{{ .Params.email }}</a>
+                    {{ with .Params.position }}<h4 class="title">{{ . }}</h4>{{ end }}
+                    {{ with .Params.phone }}<p class="phone">{{ . }}</p>{{ end }}
+                    {{ if .Params.email }}<a class="email" href='mailto:"{{ .Params.name }}" <{{ .Params.email }}>'>{{ .Params.email }}</a>{{ end }}
                 </div>
             {{ end }}
         {{ end }}

@@ -1,0 +1,86 @@
+backend:
+  name: git-gateway
+  branch: master
+  repo: LauraBrandt/robeson-planetarium-hugo
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "News Item (for homepage)"
+    folder: "news"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "imageSRC", widget: "image", required: false, optional: true}
+      - {label: "Brief description of image", name: "imageALT", widget: "string", required: false, optional: true}
+      - {label: "Body", name: "body", widget: "markdown", required: false, optional: true}
+  - name: "schoolcalendar"
+    label: "School Calendar"
+    folder: "schoolcalendar"
+    create: true
+    fields:
+      - {label: "Date", name: "title", widget: "date"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Event", name: "event", widget: "string"}
+  - name: "publicshows"
+    label: "Public Show"
+    folder: "publicshows"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}     
+      - {label: "Upcoming or Previous?", name: "status", widget: "select", options: ["upcoming", "previous"]}
+      - label: "Date(s)/Time(s)"
+        name: "showDates"
+        widget: "list"
+        fields: 
+          - {label: "Date/Time", name: "datetime", widget: "datetime"}
+        required: false
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "resources"
+    label: "Resource (either file or website)"
+    folder: "resources"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}   
+      - {label: "Author", name: "author", widget: "string", required: false}
+      - {label: "File", name: "fileLink", widget: "file", required: false}
+      - {label: "Website", name: "website", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "select", options: ["document", "pdf", "excel", "image", "mp3", "video", "zip", "website", "other"]}
+      - {label: "Order to Appear in List", name: "weight", widget: "number", default: 1}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
+  - name: "sciencecenter"
+    label: "Science Center Exhibit"
+    folder: "sciencecenter"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "imageSRC", widget: "image", required: false}
+      - {label: "Brief description of image", name: "imageALT", widget: "string", required: false}
+      - {label: "Order to Appear in List", name: "weight", widget: "number", default: 1}
+      - {label: "Description of Exhibit", name: "body", widget: "markdown", required: false}
+  - name: "contact"
+    label: "People on Contacts Page"
+    folder: "contact"
+    create: true
+    fields:
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Full Name", name: "name", widget: "string"}
+      - {label: "Title/Position", name: "position", widget: "string"}
+      - {label: "Phone Number", name: "phone", widget: "string", required: false}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "Profile Picture", name: "imageSRC", widget: "image", required: false}
+      - {label: "Order to Appear in List", name: "weight", widget: "number", default: 1}
+  - name: "posts"
+    label: "Post"
+    folder: "posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
