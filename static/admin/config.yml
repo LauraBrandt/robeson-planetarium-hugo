@@ -9,17 +9,17 @@ public_folder: "/images/uploads"
 collections:
   - name: "news"
     label: "News Item (for homepage)"
-    folder: "news"
+    folder: "content/news"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: false, optional: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "imageSRC", widget: "image", required: false, optional: true}
       - {label: "Brief description of image", name: "imageALT", widget: "string", required: false, optional: true}
       - {label: "Body", name: "body", widget: "markdown", required: false, optional: true}
   - name: "schoolcalendar"
     label: "School Calendar"
-    folder: "schoolcalendar"
+    folder: "content/schoolcalendar"
     create: true
     fields:
       - {label: "Date", name: "title", widget: "date"}
@@ -27,7 +27,7 @@ collections:
       - {label: "Event", name: "event", widget: "string"}
   - name: "publicshows"
     label: "Public Show"
-    folder: "publicshows"
+    folder: "content/publicshows"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
