@@ -4,8 +4,6 @@ date: 2017-11-10T22:51:54.000Z
 imageSRC: images/uploads/news/eclipsemap.jpg
 imageALT: Map of the path of totality of the eclipse in NC/SC
 ---
-Test???
-
 The Great American Eclipse is coming **August 21, 2017**.
 \
 [Click here](images/news/eclipsemap_full.jpg) for the full-size map.
