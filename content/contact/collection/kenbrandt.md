@@ -1,6 +1,6 @@
 ---
 date: 2017-11-12T15:38:37-03:00
-name: "Ken Brandt"
+title: "Ken Brandt"
 position: "Director"
 email: "brandtk.psrc@robeson.k12.nc.us"
 imageSRC: "/images/uploads/contact/ken.jpg"

@@ -63,9 +63,9 @@ collections:
     label: "People on Contacts Page"
     folder: "content/contact/collection"
     create: true
-    fields:
+    fields:    
+      - {label: "Full Name", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Full Name", name: "name", widget: "string"}
       - {label: "Title/Position", name: "position", widget: "string"}
       - {label: "Phone Number", name: "phone", widget: "string", required: false}
       - {label: "Email", name: "email", widget: "string", required: false}
