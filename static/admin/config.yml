@@ -42,7 +42,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "resources"
     label: "Resource (either file or website)"
-    folder: "resources"
+    folder: "content/resources"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -55,7 +55,7 @@ collections:
       - {label: "Description", name: "body", widget: "markdown", required: false}
   - name: "sciencecenter"
     label: "Science Center Exhibit"
-    folder: "sciencecenter"
+    folder: "content/sciencecenter"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -66,7 +66,7 @@ collections:
       - {label: "Description of Exhibit", name: "body", widget: "markdown", required: false}
   - name: "contact"
     label: "People on Contacts Page"
-    folder: "contact"
+    folder: content/contact"
     create: true
     fields:
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -78,7 +78,7 @@ collections:
       - {label: "Order to Appear in List", name: "weight", widget: "number", default: 1}
   - name: "posts"
     label: "Post"
-    folder: "posts"
+    folder: "content/posts"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", required: false}
