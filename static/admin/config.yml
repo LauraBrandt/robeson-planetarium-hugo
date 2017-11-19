@@ -12,11 +12,11 @@ collections:
     folder: "content/news"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string", required: false, optional: true}
+      - {label: "Title", name: "title", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "imageSRC", widget: "image", required: false, optional: true}
-      - {label: "Brief description of image", name: "imageALT", widget: "string", required: false, optional: true}
-      - {label: "Body", name: "body", widget: "markdown", required: false, optional: true}
+      - {label: "Image", name: "imageSRC", widget: "image", required: false}
+      - {label: "Brief description of image", name: "imageALT", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "schoolcalendar"
     label: "School Calendar"
     folder: "content/schoolcalendar/collection"
@@ -33,12 +33,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}     
       - {label: "Upcoming or Previous?", name: "status", widget: "select", options: ["upcoming", "previous"]}
-      - label: "Date(s)/Time(s)"
-        name: "showDates"
-        widget: "list"
-        fields: 
-          - {label: "Date/Time", name: "datetime", widget: "datetime"}
-        required: false
+      - {label: "Date(s)/Time(s)", name: "showDates", widget: "list", fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}], required: false}       
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "resources"
     label: "Resource (either file or website)"
@@ -66,7 +61,7 @@ collections:
       - {label: "Description of Exhibit", name: "body", widget: "markdown", required: false}
   - name: "contact"
     label: "People on Contacts Page"
-    folder: content/contact/collection"
+    folder: "content/contact/collection"
     create: true
     fields:
       - {label: "Publish Date", name: "date", widget: "datetime"}
