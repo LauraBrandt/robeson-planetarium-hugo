@@ -27,7 +27,7 @@ collections:
       - {label: "Event", name: "event", widget: "string"}
   - name: "publicshows"
     label: "Public Show"
-    folder: "content/publicshows"
+    folder: "content/publicshows/items"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
