@@ -1,5 +1,5 @@
 /* SLIDESHOW */
-#slideshow-container {
+/* #slideshow-container {
 	position: relative;
 	width: 90%;
 	height: 350px;
@@ -137,8 +137,8 @@
 
 #dots .active {
     background-color: #ddd;
-}
-
+} */
+/* 
 @media screen and (max-width: 500px) {
     #slideshow-container {
         width: 100%;
@@ -167,11 +167,11 @@
         height: 10px;
         width: 10px;
     }
-}
+} */
 
 hr {
-    margin-top: 7%;
-    margin-bottom: 6%;
+    /* margin-top: 7%;
+    margin-bottom: 6%; */
     border-top-color: #ddd;
 }
 
