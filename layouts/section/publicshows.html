@@ -14,7 +14,7 @@
                     <div>{{ .Content }}</div>
                     <div class="date well well-sm">
                         <p class="when">When:</p>
-                        {{ showDates }}
+                        {{ with .Params.showDates }}{{.}}{{end}}
                         <!-- {{ range .Params.showDates }}
                             <p>{{ . }}</p>
                         
