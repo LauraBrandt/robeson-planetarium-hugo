@@ -75,48 +75,48 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-  - name: "_index.md"
+  - name: "home_index.md"
     label: "Home Intro"
     files:
       - file: "content/_index.md"
         label: "Robeson Planetarium"
-        name: "_index.md"
+        name: "home_index.md"
         fields:
           - {label: Title, name: title, widget: hidden, default: "Robeson Planetarium"}
           - {label: Description, name: body, widget: markdown, required: false}
-  - name: "_index.md"
+  - name: "schoolcalendar_index.md"
     label: "School Calendar Intro"
     files:
       - file: "content/schoolcalendar/_index.md"
         label: "School Calendar"
-        name: "_index.md"
+        name: "schoolcalendar_index.md"
         fields:
           - {label: Title, name: title, widget: hidden, default: "School Calendar"}
           - {label: Description, name: body, widget: markdown, required: false}
-  - name: "_index.md"
+  - name: "publicshows_index.md"
     label: "Public Shows Intro"
     files:
       - file: "content/publicshows/_index.md"
         label: "Public Shows"
-        name: "_index.md"
+        name: "publicshows_index.md"
         fields:
           - {label: Title, name: title, widget: hidden, default: "Public Shows"}
           - {label: Description, name: body, widget: markdown, required: false}
-  - name: "_index.md"
+  - name: "resources_index.md"
     label: "Resources Intro"
     files:
       - file: "content/resources/_index.md"
         label: "Resources"
-        name: "_index.md"
+        name: "resources_index.md"
         fields:
           - {label: Title, name: title, widget: hidden, default: "Resources"}
           - {label: Description, name: body, widget: markdown, required: false}
-  - name: "_index.md"
+  - name: "sciencecenter_index.md"
     label: "Science Center Intro"
     files:
       - file: "content/sciencecenter/_index.md"
         label: "Science Center"
-        name: "_index.md"
+        name: "sciencecenter_index.md"
         fields:
           - {label: Title, name: title, widget: hidden, default: "Science Center"}
           - {label: Description, name: body, widget: markdown, required: false}
