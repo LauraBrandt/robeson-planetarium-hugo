@@ -29,8 +29,7 @@ collections:
     folder: "content/publicshows/collection"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}     
+      - {label: "Title", name: "title", widget: "string"}    
       - {label: "Upcoming or Previous?", name: "status", widget: "select", options: ["upcoming", "previous"]}
       - {label: "Date(s)/Time(s)", name: "showDates", widget: "text", required: false}       
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -53,7 +52,6 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "imageSRC", widget: "image", required: false}
       - {label: "Brief description of image", name: "imageALT", widget: "string", required: false}
       - {label: "Order to Appear in List", name: "weight", widget: "number", default: 1}
@@ -64,7 +62,6 @@ collections:
     create: true
     fields:    
       - {label: "Full Name", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title/Position", name: "position", widget: "string"}
       - {label: "Phone Number", name: "phone", widget: "string", required: false}
       - {label: "Email", name: "email", widget: "string", required: false}
