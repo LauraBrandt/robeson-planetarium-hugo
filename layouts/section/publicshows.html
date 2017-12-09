@@ -14,7 +14,7 @@
                     <div>{{ .Content }}</div>
                     <div class="date well well-sm">
                         <p class="when">When:</p>
-                        {{ with .Params.showDates }}<p>{{ . }}</p>{{ end }}
+                        {{ with .Params.showDates }}<p class="dates">{{ . }}</p>{{ end }}
                     </div>
                 </li>
             {{ end }}
@@ -33,4 +33,11 @@
             {{ end }}
         </ul>
     {{ end }}
+
+    <script>
+        var showDates = document.querySelector(".dates").innerHTML
+        var re = new RegExp(String.fromCharCode(10),"g");
+        document.querySelector(".dates").innerHTML = showDates.replace(re, "<br>");
+    </script>
+
 {{ end }}
