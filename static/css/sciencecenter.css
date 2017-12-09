@@ -47,5 +47,9 @@
     #all-exhibits .exhibit {
         margin-bottom: 10%;
     }
+
+    .exhibit-description {
+        margin: 5%;
+    }
 }
 
