@@ -17,13 +17,13 @@ collections:
       - {label: "Image", name: "imageSRC", widget: "image", required: false}
       - {label: "Brief description of image", name: "imageALT", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-  # - name: "schoolcalendar"
-  #   label: "School Calendar"
-  #   folder: "content/schoolcalendar/collection"
-  #   create: true
-  #   fields:
-  #     - {label: "Date", name: "title", widget: "date"}
-  #     - {label: "Event", name: "event", widget: "string"}
+  - name: "calendar"
+    label: "Calendar"
+    folder: "content/calendar/collection"
+    create: true
+    fields:
+      - {label: "Date", name: "title", widget: "date"}
+      - {label: "Event", name: "event", widget: "string"}
   # - name: "publicshows"
   #   label: "Public Show"
   #   folder: "content/publicshows/collection"
@@ -84,15 +84,15 @@ collections:
         fields:
           - {label: Title, name: title, widget: hidden, default: "Robeson Planetarium"}
           - {label: Description, name: body, widget: markdown, required: false}
-  # - name: "schoolcalendar_index.md"
-  #   label: "School Calendar Intro"
-  #   files:
-  #     - file: "content/schoolcalendar/_index.md"
-  #       label: "School Calendar"
-  #       name: "schoolcalendar_index.md"
-  #       fields:
-  #         - {label: Title, name: title, widget: hidden, default: "School Calendar"}
-  #         - {label: Description, name: body, widget: markdown, required: false}
+  - name: "calendar_index.md"
+    label: "Calendar Intro"
+    files:
+      - file: "content/calendar/_index.md"
+        label: "Calendar"
+        name: "calendar_index.md"
+        fields:
+          - {label: Title, name: title, widget: hidden, default: "Calendar"}
+          - {label: Description, name: body, widget: markdown, required: false}
   # - name: "publicshows_index.md"
   #   label: "Public Shows Intro"
   #   files:

@@ -13,11 +13,11 @@ log = true
     weight = 1
     url = "/"
 
-#[[menu.main]]
-#    name = "School Calendar"
-#    weight = 2
-#    url = "/schoolcalendar/"
-#    identifier = "schoolcalendar"
+[[menu.main]]
+    name = "Calendar"
+    weight = 2
+    url = "/calendar/"
+    identifier = "calendar"
 
 #[[menu.main]]
 #    name = "Public Shows"
