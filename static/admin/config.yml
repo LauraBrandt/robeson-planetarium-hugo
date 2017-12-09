@@ -75,3 +75,13 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "_index.md"
+    label: "Home Intro"
+    files:
+      - file: "content/_index.md"
+        label: "Home Intro"
+        name: "_index.md"
+        fields:
+          - {label: Title, name: title, widget: hidden, default: "Robeson Planetarium"}
+          - {label: Description, name: body, widget: string}
+          - {label: Page, name: page, widget: hidden, default: "/products.html"}
