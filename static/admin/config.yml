@@ -32,7 +32,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}     
       - {label: "Upcoming or Previous?", name: "status", widget: "select", options: ["upcoming", "previous"]}
-      - {label: "Date(s)/Time(s)", name: "showDates", widget: "list", fields: [{label: Date, name: date, widget: date}], required: false}       
+      - {label: "Date(s)/Time(s)", name: "showDates", widget: "list", fields: [{label: "MM/DD/YY HH:MM am/pm", name: datetime, widget: string}], required: false}       
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "resources"
     label: "Resource (either file or website)"
