@@ -8,10 +8,6 @@
     <h1>{{ .Title }}</h1>
     <div id="intro">{{ .Content }}</div>
 
-    {{ $path := "/static/images/uploads" }}
-    {{ $relPath := "images/uploads/"}}
-    {{ $files := readDir $path }}
-
     {{ range .Pages.ByDate.Reverse }}
         <div class="resource">
             {{ $page := . }}
@@ -23,18 +19,13 @@
                     <a href="{{ . }}" target="_blank">{{ . }}</a>
                 {{ end }}
                 {{ with .Params.fileLink }}
-                    {{ range $files }}
-                        {{ if eq .Name ($page.Params.fileLink | strings.TrimPrefix $relPath) }}
-                            <a href="{{ $page.Params.fileLink | relURL }}" target="_blank">                        
-                                {{ $iconPath := printf "/images/file-icons/%s.png" $page.Params.type }}
-                                {{ if (fileExists (printf "static/%s" $iconPath)) }}
-                                    <img class="file-icon" src="{{ $iconPath }}">
-                                {{ end }}
-                                {{ .Name }}
-                            </a>                    
-                            <span class="size">{{ .Size }}</span>
+                    <a href="{{ $page.Params.fileLink | relURL }}" target="_blank">                        
+                        {{ $iconPath := printf "/images/file-icons/%s.png" $page.Params.type }}
+                        {{ if (fileExists (printf "static/%s" $iconPath)) }}
+                            <img class="file-icon" src="{{ $iconPath }}">
                         {{ end }}
-                    {{ end }}
+                        {{ $page.Params.fileLink | strings.TrimPrefix "images/uploads/" }}
+                    </a>
                 {{ end }}
             </p>
         </div>
