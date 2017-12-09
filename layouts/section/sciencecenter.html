@@ -12,7 +12,7 @@
                     <img class="img-responsive" src="{{ .Params.imageSRC | relURL}}" {{if .Params.imageALT}}alt="{{ .Params.imageALT }}"{{end}}>
                 {{ end }}
                 {{ with .Content }}
-                    <div>{{ . }}</div>
+                    <div class="exhibit-description">{{ . }}</div>
                 {{ end }}
             </div>
         {{ end }}

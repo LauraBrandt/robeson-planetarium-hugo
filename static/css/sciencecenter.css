@@ -30,6 +30,10 @@
     max-width: 75%;
 }
 
+.exhibit-description {
+    margin: 5% 12%;
+}
+
 @media screen and (max-width: 767px) {
     #intro {
         margin-bottom: 10%;
