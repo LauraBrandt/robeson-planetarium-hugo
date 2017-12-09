@@ -13,17 +13,17 @@ log = true
     weight = 1
     url = "/"
 
-[[menu.main]]
-    name = "School Calendar"
-    weight = 2
-    url = "/schoolcalendar/"
-    identifier = "schoolcalendar"
+#[[menu.main]]
+#    name = "School Calendar"
+#    weight = 2
+#    url = "/schoolcalendar/"
+#    identifier = "schoolcalendar"
 
-[[menu.main]]
-    name = "Public Shows"
-    weight = 3
-    url = "/publicshows/"
-    identifier = "publicshows"
+#[[menu.main]]
+#    name = "Public Shows"
+#    weight = 3
+#    url = "/publicshows/"
+#    identifier = "publicshows"
 
 [[menu.main]]
     name = "Resources"
@@ -31,11 +31,11 @@ log = true
     url = "/resources/"
     identifier = "resources"
 
-[[menu.main]]
-    name = "Science Center"
-    weight = 5
-    url = "/sciencecenter/"
-    identifier = "sciencecenter"
+#[[menu.main]]
+#    name = "Science Center"
+#    weight = 5
+#    url = "/sciencecenter/"
+#    identifier = "sciencecenter"
 
 [[menu.main]]
     name = "Contact"
