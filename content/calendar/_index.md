@@ -1,3 +1,3 @@
 ---
-title: "School Calendar"
+title: "Calendar"
 ---
