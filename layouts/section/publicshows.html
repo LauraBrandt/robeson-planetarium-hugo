@@ -14,14 +14,7 @@
                     <div>{{ .Content }}</div>
                     <div class="date well well-sm">
                         <p class="when">When:</p>
-                        {{ with .Params.showDates }}{{.}}{{end}}
-
-                        <!-- {{ range .Params.showDates }}
-                            <p>{{ . }}</p>
-                        
-                            <p>{{ (time .).Format "Monday, January 02 at 3:04 pm" }}</p>
-                       
-                        {{ end }} -->
+                        {{ with .Params.showDates }}<p>{{ . }}</p>{{ end }}
                     </div>
                 </li>
             {{ end }}
