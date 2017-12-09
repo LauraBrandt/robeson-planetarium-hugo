@@ -1,7 +1,7 @@
 ---
 title: Total Solar Eclipse
 date: 2017-11-10T22:51:54.000Z
-imageSRC: images/uploads/news/eclipsemap.jpg
+imageSRC: images/uploads/eclipsemap.jpg
 imageALT: Map of the path of totality of the eclipse in NC/SC
 ---
 The Great American Eclipse is coming **August 21, 2017**.

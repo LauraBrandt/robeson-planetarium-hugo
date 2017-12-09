@@ -8,8 +8,8 @@
     <h1>{{ .Title }}</h1>
     <div id="intro">{{ .Content }}</div>
 
-    {{ $path := "/static/images/uploads/resources" }}
-    {{ $relPath := "images/uploads/resources/"}}
+    {{ $path := "/static/images/uploads" }}
+    {{ $relPath := "images/uploads/"}}
     {{ $files := readDir $path }}
 
     {{ range .Pages.ByDate.Reverse }}
