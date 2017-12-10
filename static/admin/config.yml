@@ -23,7 +23,8 @@ collections:
     create: true
     fields:
       - {label: "Date", name: "title", widget: "date"}
-      - {label: "Event", name: "event", widget: "string"}
+      - {label: "Event", name: "event", widget: "string"}      
+      - {label: "Current Date", name: "date", widget: "datetime"}
   # - name: "publicshows"
   #   label: "Public Show"
   #   folder: "content/publicshows/collection"
