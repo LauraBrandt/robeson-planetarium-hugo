@@ -23,8 +23,17 @@ collections:
     folder: "content/calendar/collection"
     create: true
     fields:
-      - {label: "Date", name: "date", widget: "date"}
-      - {label: "Event", name: "title", widget: "string"}
+      - {label: "Test", name: "title", widget: "string"}
+      - label: "August"
+        name: "08"
+        widget: "object"
+        fields:
+          - {label: "08/01", name: "01", widget: string}
+          - {label: "08/02", name: "02", widget: string}
+          - {label: "08/03", name: "03", widget: string}
+          - {label: "08/04", name: "04", widget: string}
+          - {label: "08/05", name: "05", widget: string}
+  
   # - name: "publicshows"
   #   label: "Public Show"
   #   folder: "content/publicshows/collection"
