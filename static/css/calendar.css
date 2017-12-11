@@ -2,6 +2,10 @@
     margin: 5% auto;
 }
 
+#intro {
+    text-align: center;
+}
+
 #calendar .table {
     text-align: center;
     margin: 0;

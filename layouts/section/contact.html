@@ -12,7 +12,7 @@
         <h3>Directions:</h3>
         <p class="address">{{ .Params.address1 }}</p>
         <p class="address">{{ .Params.address2 }}</p>
-        <iframe class="map" width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key={{ .Site.Params.googleMapsApiKey }}&q=Robeson+Planetarium,Lumberton+NC&zoom=15" allowfullscreen></iframe>
+        <iframe class="map" width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key={{ .Site.Params.googleMapsApiKey }}&q={{ .Params.address1 }} {{ .Params.address2 }}&zoom=15" allowfullscreen></iframe>
         <p>{{ .Params.directions }}</p>
     </div>
     <hr>
