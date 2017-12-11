@@ -7,6 +7,6 @@ weight: '3'
 ---
 We have been given approval for the deployment of an inflatable planetarium system, pending the rebuild of the planetarium and Science Center. This means that we can bring the planetarium experience to the Robeson County Partnership for Children in downtown Lumberton.  _A huge "thank you" to the Administration, School Board, and the Robeson County Partnership for Children_!
 
-![projector system for inflatable planetarium](/images/uploads/projector_system_newtonian.jpg)
+![projector system](/images/uploads/projector_system_newtonian.jpg)
 
-![inflatable planetarium entrance](/images/uploads/img_20170605_124806871.jpg)
+![inflatable planetarium](/images/uploads/img_20170605_124806871.jpg)
