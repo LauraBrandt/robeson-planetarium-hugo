@@ -5,9 +5,6 @@ disableKinds = ["RSS"]
 enableEmoji = true
 log = true
 
-[params]
-    googleMapsApiKey = "AIzaSyB1L483vgdF-thHC9kDsBjDVF-L-98STIo"
-
 [[menu.main]]
     name = "Home"
     weight = 1
