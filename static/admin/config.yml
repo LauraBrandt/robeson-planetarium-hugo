@@ -21,7 +21,7 @@ collections:
 
   - name: "calendar"
     label: "Calendar"
-    #delete: false
+    delete: false
     files:
       - file: "content/calendar/August.md"
         label: "August"
@@ -37,6 +37,32 @@ collections:
               - {label: "08/03", name: "03", widget: string}
               - {label: "08/04", name: "04", widget: string}
               - {label: "08/05", name: "05", widget: string}
+              - {label: "08/06", name: "06", widget: string}
+              - {label: "08/07", name: "07", widget: string}
+              - {label: "08/08", name: "08", widget: string}
+              - {label: "08/09", name: "09", widget: string}
+              - {label: "08/10", name: "10", widget: string}
+              - {label: "08/11", name: "11", widget: string}
+              - {label: "08/12", name: "12", widget: string}
+              - {label: "08/13", name: "13", widget: string}
+              - {label: "08/14", name: "14", widget: string}
+              - {label: "08/15", name: "15", widget: string}
+              - {label: "08/16", name: "16", widget: string}
+              - {label: "08/17", name: "17", widget: string}
+              - {label: "08/18", name: "18", widget: string}
+              - {label: "08/19", name: "19", widget: string}
+              - {label: "08/20", name: "20", widget: string}
+              - {label: "08/21", name: "21", widget: string}
+              - {label: "08/22", name: "22", widget: string}
+              - {label: "08/23", name: "23", widget: string}
+              - {label: "08/24", name: "24", widget: string}
+              - {label: "08/25", name: "25", widget: string}
+              - {label: "08/26", name: "26", widget: string}
+              - {label: "08/27", name: "27", widget: string}
+              - {label: "08/28", name: "28", widget: string}
+              - {label: "08/29", name: "29", widget: string}
+              - {label: "08/30", name: "30", widget: string}
+              - {label: "08/31", name: "31", widget: string}
       - file: "content/calendar/September.md"
         label: "September"
         name: "september"
@@ -50,8 +76,428 @@ collections:
               - {label: "09/02", name: "02", widget: string}
               - {label: "09/03", name: "03", widget: string}
               - {label: "09/04", name: "04", widget: string}
-              - {label: "09/05", name: "05", widget: string}              
-  
+              - {label: "09/05", name: "05", widget: string}
+              - {label: "09/06", name: "06", widget: string}
+              - {label: "09/07", name: "07", widget: string}
+              - {label: "09/08", name: "08", widget: string}
+              - {label: "09/09", name: "09", widget: string}
+              - {label: "09/10", name: "10", widget: string}
+              - {label: "09/11", name: "11", widget: string}
+              - {label: "09/12", name: "12", widget: string}
+              - {label: "09/13", name: "13", widget: string}
+              - {label: "09/14", name: "14", widget: string}
+              - {label: "09/15", name: "15", widget: string}
+              - {label: "09/16", name: "16", widget: string}
+              - {label: "09/17", name: "17", widget: string}
+              - {label: "09/18", name: "18", widget: string}
+              - {label: "09/19", name: "19", widget: string}
+              - {label: "09/20", name: "20", widget: string}
+              - {label: "09/21", name: "21", widget: string}
+              - {label: "09/22", name: "22", widget: string}
+              - {label: "09/23", name: "23", widget: string}
+              - {label: "09/24", name: "24", widget: string}
+              - {label: "09/25", name: "25", widget: string}
+              - {label: "09/26", name: "26", widget: string}
+              - {label: "09/27", name: "27", widget: string}
+              - {label: "09/28", name: "28", widget: string}
+              - {label: "09/29", name: "29", widget: string}
+              - {label: "09/30", name: "30", widget: string}
+      - file: "content/calendar/October.md"
+        label: "October"
+        name: "october"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "October"}
+          - label: "October"
+            name: "10"
+            widget: "object"
+            fields:
+              - {label: "10/01", name: "01", widget: string}
+              - {label: "10/02", name: "02", widget: string}
+              - {label: "10/03", name: "03", widget: string}
+              - {label: "10/04", name: "04", widget: string}
+              - {label: "10/05", name: "05", widget: string}
+              - {label: "10/06", name: "06", widget: string}
+              - {label: "10/07", name: "07", widget: string}
+              - {label: "10/08", name: "08", widget: string}
+              - {label: "10/09", name: "09", widget: string}
+              - {label: "10/10", name: "10", widget: string}
+              - {label: "10/11", name: "11", widget: string}
+              - {label: "10/12", name: "12", widget: string}
+              - {label: "10/13", name: "13", widget: string}
+              - {label: "10/14", name: "14", widget: string}
+              - {label: "10/15", name: "15", widget: string}
+              - {label: "10/16", name: "16", widget: string}
+              - {label: "10/17", name: "17", widget: string}
+              - {label: "10/18", name: "18", widget: string}
+              - {label: "10/19", name: "19", widget: string}
+              - {label: "10/20", name: "20", widget: string}
+              - {label: "10/21", name: "21", widget: string}
+              - {label: "10/22", name: "22", widget: string}
+              - {label: "10/23", name: "23", widget: string}
+              - {label: "10/24", name: "24", widget: string}
+              - {label: "10/25", name: "25", widget: string}
+              - {label: "10/26", name: "26", widget: string}
+              - {label: "10/27", name: "27", widget: string}
+              - {label: "10/28", name: "28", widget: string}
+              - {label: "10/29", name: "29", widget: string}
+              - {label: "10/30", name: "30", widget: string}
+              - {label: "10/31", name: "31", widget: string}
+      - file: "content/calendar/November.md"
+        label: "November"
+        name: "november"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "November"}
+          - label: "November"
+            name: "11"
+            widget: "object"
+            fields:
+              - {label: "11/01", name: "01", widget: string}
+              - {label: "11/02", name: "02", widget: string}
+              - {label: "11/03", name: "03", widget: string}
+              - {label: "11/04", name: "04", widget: string}
+              - {label: "11/05", name: "05", widget: string}
+              - {label: "11/06", name: "06", widget: string}
+              - {label: "11/07", name: "07", widget: string}
+              - {label: "11/08", name: "08", widget: string}
+              - {label: "11/09", name: "09", widget: string}
+              - {label: "11/10", name: "10", widget: string}
+              - {label: "11/11", name: "11", widget: string}
+              - {label: "11/12", name: "12", widget: string}
+              - {label: "11/13", name: "13", widget: string}
+              - {label: "11/14", name: "14", widget: string}
+              - {label: "11/15", name: "15", widget: string}
+              - {label: "11/16", name: "16", widget: string}
+              - {label: "11/17", name: "17", widget: string}
+              - {label: "11/18", name: "18", widget: string}
+              - {label: "11/19", name: "19", widget: string}
+              - {label: "11/20", name: "20", widget: string}
+              - {label: "11/21", name: "21", widget: string}
+              - {label: "11/22", name: "22", widget: string}
+              - {label: "11/23", name: "23", widget: string}
+              - {label: "11/24", name: "24", widget: string}
+              - {label: "11/25", name: "25", widget: string}
+              - {label: "11/26", name: "26", widget: string}
+              - {label: "11/27", name: "27", widget: string}
+              - {label: "11/28", name: "28", widget: string}
+              - {label: "11/29", name: "29", widget: string}
+              - {label: "11/30", name: "30", widget: string}
+      - file: "content/calendar/December.md"
+        label: "December"
+        name: "december"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "December"}
+          - label: "December"
+            name: "12"
+            widget: "object"
+            fields:
+              - {label: "12/01", name: "01", widget: string}
+              - {label: "12/02", name: "02", widget: string}
+              - {label: "12/03", name: "03", widget: string}
+              - {label: "12/04", name: "04", widget: string}
+              - {label: "12/05", name: "05", widget: string}
+              - {label: "12/06", name: "06", widget: string}
+              - {label: "12/07", name: "07", widget: string}
+              - {label: "12/08", name: "08", widget: string}
+              - {label: "12/09", name: "09", widget: string}
+              - {label: "12/10", name: "10", widget: string}
+              - {label: "12/11", name: "11", widget: string}
+              - {label: "12/12", name: "12", widget: string}
+              - {label: "12/13", name: "13", widget: string}
+              - {label: "12/14", name: "14", widget: string}
+              - {label: "12/15", name: "15", widget: string}
+              - {label: "12/16", name: "16", widget: string}
+              - {label: "12/17", name: "17", widget: string}
+              - {label: "12/18", name: "18", widget: string}
+              - {label: "12/19", name: "19", widget: string}
+              - {label: "12/20", name: "20", widget: string}
+              - {label: "12/21", name: "21", widget: string}
+              - {label: "12/22", name: "22", widget: string}
+              - {label: "12/23", name: "23", widget: string}
+              - {label: "12/24", name: "24", widget: string}
+              - {label: "12/25", name: "25", widget: string}
+              - {label: "12/26", name: "26", widget: string}
+              - {label: "12/27", name: "27", widget: string}
+              - {label: "12/28", name: "28", widget: string}
+              - {label: "12/29", name: "29", widget: string}
+              - {label: "12/30", name: "30", widget: string}
+              - {label: "12/31", name: "31", widget: string}
+      - file: "content/calendar/January.md"
+        label: "January"
+        name: "january"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "January"}
+          - label: "January"
+            name: "01"
+            widget: "object"
+            fields:
+              - {label: "01/01", name: "01", widget: string}
+              - {label: "01/02", name: "02", widget: string}
+              - {label: "01/03", name: "03", widget: string}
+              - {label: "01/04", name: "04", widget: string}
+              - {label: "01/05", name: "05", widget: string}
+              - {label: "01/06", name: "06", widget: string}
+              - {label: "01/07", name: "07", widget: string}
+              - {label: "01/08", name: "08", widget: string}
+              - {label: "01/09", name: "09", widget: string}
+              - {label: "01/10", name: "10", widget: string}
+              - {label: "01/11", name: "11", widget: string}
+              - {label: "01/12", name: "12", widget: string}
+              - {label: "01/13", name: "13", widget: string}
+              - {label: "01/14", name: "14", widget: string}
+              - {label: "01/15", name: "15", widget: string}
+              - {label: "01/16", name: "16", widget: string}
+              - {label: "01/17", name: "17", widget: string}
+              - {label: "01/18", name: "18", widget: string}
+              - {label: "01/19", name: "19", widget: string}
+              - {label: "01/20", name: "20", widget: string}
+              - {label: "01/21", name: "21", widget: string}
+              - {label: "01/22", name: "22", widget: string}
+              - {label: "01/23", name: "23", widget: string}
+              - {label: "01/24", name: "24", widget: string}
+              - {label: "01/25", name: "25", widget: string}
+              - {label: "01/26", name: "26", widget: string}
+              - {label: "01/27", name: "27", widget: string}
+              - {label: "01/28", name: "28", widget: string}
+              - {label: "01/29", name: "29", widget: string}
+              - {label: "01/30", name: "30", widget: string}
+              - {label: "01/31", name: "31", widget: string}
+      - file: "content/calendar/February.md"
+        label: "February"
+        name: "february"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "February"}
+          - label: "February"
+            name: "02"
+            widget: "object"
+            fields:
+              - {label: "02/01", name: "01", widget: string}
+              - {label: "02/02", name: "02", widget: string}
+              - {label: "02/03", name: "03", widget: string}
+              - {label: "02/04", name: "04", widget: string}
+              - {label: "02/05", name: "05", widget: string}
+              - {label: "02/06", name: "06", widget: string}
+              - {label: "02/07", name: "07", widget: string}
+              - {label: "02/08", name: "08", widget: string}
+              - {label: "02/09", name: "09", widget: string}
+              - {label: "02/10", name: "10", widget: string}
+              - {label: "02/11", name: "11", widget: string}
+              - {label: "02/12", name: "12", widget: string}
+              - {label: "02/13", name: "13", widget: string}
+              - {label: "02/14", name: "14", widget: string}
+              - {label: "02/15", name: "15", widget: string}
+              - {label: "02/16", name: "16", widget: string}
+              - {label: "02/17", name: "17", widget: string}
+              - {label: "02/18", name: "18", widget: string}
+              - {label: "02/19", name: "19", widget: string}
+              - {label: "02/20", name: "20", widget: string}
+              - {label: "02/21", name: "21", widget: string}
+              - {label: "02/22", name: "22", widget: string}
+              - {label: "02/23", name: "23", widget: string}
+              - {label: "02/24", name: "24", widget: string}
+              - {label: "02/25", name: "25", widget: string}
+              - {label: "02/26", name: "26", widget: string}
+              - {label: "02/27", name: "27", widget: string}
+              - {label: "02/28", name: "28", widget: string}
+              - {label: "02/29", name: "29", widget: string}
+      - file: "content/calendar/March.md"
+        label: "March"
+        name: "march"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "March"}
+          - label: "March"
+            name: "03"
+            widget: "object"
+            fields:
+              - {label: "03/01", name: "01", widget: string}
+              - {label: "03/02", name: "02", widget: string}
+              - {label: "03/03", name: "03", widget: string}
+              - {label: "03/04", name: "04", widget: string}
+              - {label: "03/05", name: "05", widget: string}
+              - {label: "03/06", name: "06", widget: string}
+              - {label: "03/07", name: "07", widget: string}
+              - {label: "03/08", name: "08", widget: string}
+              - {label: "03/09", name: "09", widget: string}
+              - {label: "03/10", name: "10", widget: string}
+              - {label: "03/11", name: "11", widget: string}
+              - {label: "03/12", name: "12", widget: string}
+              - {label: "03/13", name: "13", widget: string}
+              - {label: "03/14", name: "14", widget: string}
+              - {label: "03/15", name: "15", widget: string}
+              - {label: "03/16", name: "16", widget: string}
+              - {label: "03/17", name: "17", widget: string}
+              - {label: "03/18", name: "18", widget: string}
+              - {label: "03/19", name: "19", widget: string}
+              - {label: "03/20", name: "20", widget: string}
+              - {label: "03/21", name: "21", widget: string}
+              - {label: "03/22", name: "22", widget: string}
+              - {label: "03/23", name: "23", widget: string}
+              - {label: "03/24", name: "24", widget: string}
+              - {label: "03/25", name: "25", widget: string}
+              - {label: "03/26", name: "26", widget: string}
+              - {label: "03/27", name: "27", widget: string}
+              - {label: "03/28", name: "28", widget: string}
+              - {label: "03/29", name: "29", widget: string}
+              - {label: "03/30", name: "30", widget: string}
+              - {label: "03/31", name: "31", widget: string}
+      - file: "content/calendar/April.md"
+        label: "April"
+        name: "april"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "April"}
+          - label: "April"
+            name: "04"
+            widget: "object"
+            fields:
+              - {label: "04/01", name: "01", widget: string}
+              - {label: "04/02", name: "02", widget: string}
+              - {label: "04/03", name: "03", widget: string}
+              - {label: "04/04", name: "04", widget: string}
+              - {label: "04/05", name: "05", widget: string}
+              - {label: "04/06", name: "06", widget: string}
+              - {label: "04/07", name: "07", widget: string}
+              - {label: "04/08", name: "08", widget: string}
+              - {label: "04/09", name: "09", widget: string}
+              - {label: "04/10", name: "10", widget: string}
+              - {label: "04/11", name: "11", widget: string}
+              - {label: "04/12", name: "12", widget: string}
+              - {label: "04/13", name: "13", widget: string}
+              - {label: "04/14", name: "14", widget: string}
+              - {label: "04/15", name: "15", widget: string}
+              - {label: "04/16", name: "16", widget: string}
+              - {label: "04/17", name: "17", widget: string}
+              - {label: "04/18", name: "18", widget: string}
+              - {label: "04/19", name: "19", widget: string}
+              - {label: "04/20", name: "20", widget: string}
+              - {label: "04/21", name: "21", widget: string}
+              - {label: "04/22", name: "22", widget: string}
+              - {label: "04/23", name: "23", widget: string}
+              - {label: "04/24", name: "24", widget: string}
+              - {label: "04/25", name: "25", widget: string}
+              - {label: "04/26", name: "26", widget: string}
+              - {label: "04/27", name: "27", widget: string}
+              - {label: "04/28", name: "28", widget: string}
+              - {label: "04/29", name: "29", widget: string}
+              - {label: "04/30", name: "30", widget: string}
+      - file: "content/calendar/May.md"
+        label: "May"
+        name: "may"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "May"}
+          - label: "May"
+            name: "05"
+            widget: "object"
+            fields:
+              - {label: "05/01", name: "01", widget: string}
+              - {label: "05/02", name: "02", widget: string}
+              - {label: "05/03", name: "03", widget: string}
+              - {label: "05/04", name: "04", widget: string}
+              - {label: "05/05", name: "05", widget: string}
+              - {label: "05/06", name: "06", widget: string}
+              - {label: "05/07", name: "07", widget: string}
+              - {label: "05/08", name: "08", widget: string}
+              - {label: "05/09", name: "09", widget: string}
+              - {label: "05/10", name: "10", widget: string}
+              - {label: "05/11", name: "11", widget: string}
+              - {label: "05/12", name: "12", widget: string}
+              - {label: "05/13", name: "13", widget: string}
+              - {label: "05/14", name: "14", widget: string}
+              - {label: "05/15", name: "15", widget: string}
+              - {label: "05/16", name: "16", widget: string}
+              - {label: "05/17", name: "17", widget: string}
+              - {label: "05/18", name: "18", widget: string}
+              - {label: "05/19", name: "19", widget: string}
+              - {label: "05/20", name: "20", widget: string}
+              - {label: "05/21", name: "21", widget: string}
+              - {label: "05/22", name: "22", widget: string}
+              - {label: "05/23", name: "23", widget: string}
+              - {label: "05/24", name: "24", widget: string}
+              - {label: "05/25", name: "25", widget: string}
+              - {label: "05/26", name: "26", widget: string}
+              - {label: "05/27", name: "27", widget: string}
+              - {label: "05/28", name: "28", widget: string}
+              - {label: "05/29", name: "29", widget: string}
+              - {label: "05/30", name: "30", widget: string}
+              - {label: "05/31", name: "31", widget: string}
+      - file: "content/calendar/June.md"
+        label: "June"
+        name: "june"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "June"}
+          - label: "June"
+            name: "06"
+            widget: "object"
+            fields:
+              - {label: "06/01", name: "01", widget: string}
+              - {label: "06/02", name: "02", widget: string}
+              - {label: "06/03", name: "03", widget: string}
+              - {label: "06/04", name: "04", widget: string}
+              - {label: "06/05", name: "05", widget: string}
+              - {label: "06/06", name: "06", widget: string}
+              - {label: "06/07", name: "07", widget: string}
+              - {label: "06/08", name: "08", widget: string}
+              - {label: "06/09", name: "09", widget: string}
+              - {label: "06/10", name: "10", widget: string}
+              - {label: "06/11", name: "11", widget: string}
+              - {label: "06/12", name: "12", widget: string}
+              - {label: "06/13", name: "13", widget: string}
+              - {label: "06/14", name: "14", widget: string}
+              - {label: "06/15", name: "15", widget: string}
+              - {label: "06/16", name: "16", widget: string}
+              - {label: "06/17", name: "17", widget: string}
+              - {label: "06/18", name: "18", widget: string}
+              - {label: "06/19", name: "19", widget: string}
+              - {label: "06/20", name: "20", widget: string}
+              - {label: "06/21", name: "21", widget: string}
+              - {label: "06/22", name: "22", widget: string}
+              - {label: "06/23", name: "23", widget: string}
+              - {label: "06/24", name: "24", widget: string}
+              - {label: "06/25", name: "25", widget: string}
+              - {label: "06/26", name: "26", widget: string}
+              - {label: "06/27", name: "27", widget: string}
+              - {label: "06/28", name: "28", widget: string}
+              - {label: "06/29", name: "29", widget: string}
+              - {label: "06/30", name: "30", widget: string}
+      - file: "content/calendar/July.md"
+        label: "July"
+        name: "july"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "July"}
+          - label: "July"
+            name: "07"
+            widget: "object"
+            fields:
+              - {label: "07/01", name: "01", widget: string}
+              - {label: "07/02", name: "02", widget: string}
+              - {label: "07/03", name: "03", widget: string}
+              - {label: "07/04", name: "04", widget: string}
+              - {label: "07/05", name: "05", widget: string}
+              - {label: "07/06", name: "06", widget: string}
+              - {label: "07/07", name: "07", widget: string}
+              - {label: "07/08", name: "08", widget: string}
+              - {label: "07/09", name: "09", widget: string}
+              - {label: "07/10", name: "10", widget: string}
+              - {label: "07/11", name: "11", widget: string}
+              - {label: "07/12", name: "12", widget: string}
+              - {label: "07/13", name: "13", widget: string}
+              - {label: "07/14", name: "14", widget: string}
+              - {label: "07/15", name: "15", widget: string}
+              - {label: "07/16", name: "16", widget: string}
+              - {label: "07/17", name: "17", widget: string}
+              - {label: "07/18", name: "18", widget: string}
+              - {label: "07/19", name: "19", widget: string}
+              - {label: "07/20", name: "20", widget: string}
+              - {label: "07/21", name: "21", widget: string}
+              - {label: "07/22", name: "22", widget: string}
+              - {label: "07/23", name: "23", widget: string}
+              - {label: "07/24", name: "24", widget: string}
+              - {label: "07/25", name: "25", widget: string}
+              - {label: "07/26", name: "26", widget: string}
+              - {label: "07/27", name: "27", widget: string}
+              - {label: "07/28", name: "28", widget: string}
+              - {label: "07/29", name: "29", widget: string}
+              - {label: "07/30", name: "30", widget: string}
+              - {label: "07/31", name: "31", widget: string}
+
   # - name: "publicshows"
   #   label: "Public Show"
   #   folder: "content/publicshows/collection"
