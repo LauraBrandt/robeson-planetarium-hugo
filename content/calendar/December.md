@@ -6,9 +6,7 @@ events:
   '06': St Pauls Elem 4th Grade
   '07': St Pauls Elem 4th Grade
   08: St Pauls Elem 4th Grade
-  09: >-
-    Public show featuring the holiday season, and why so many different cultures
-    celebrate this very special time of year. Shows at 1 and 3 pm.
+  09: Public shows at 1 and 3 pm.
   '11': Union Elem 4th Grade
   '12': Union Elem 4th Grade
   '13': Union Elem 4th Grade
