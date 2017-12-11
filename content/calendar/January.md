@@ -10,6 +10,7 @@ events:
   '10': Deep Branch 6th Grade
   '11': Fairgrove 6th Grade
   '12': Fairgrove 6th Grade
+  '13': Public shows at 1 and 3 pm
   '15': Holiday
   '16': Required Teacher Work Day
   '17': Fairmont Middle 6th Grade
