@@ -56,7 +56,14 @@
                     <!-- {{ with $context.Site.GetPage "page" (printf "calendar/%s.md" $dateString) }}
                         {{ .Params.event }}
                     {{ end }} -->
+                    
                     {{ range $i, $e := $events }}
+                        {{ if eq (printf "%T" $i) "float64"}}
+                            {{ $i := printf "%02.f" $i}}
+                            {{ if eq $i (printf "%02d" $day) }}
+                                {{ $e }}
+                            {{ end }}
+                        {{end}}
                         {{ if eq $i (printf "%02d" $day) }}
                             {{ $e }}
                         {{ end }}

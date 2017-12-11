@@ -50,11 +50,13 @@
 }
 
 #calendar .weekend {
-    color: #000;
     background-color: #eaeaea;
 }
 #calendar .weekend:hover {
     background-color: #ddd;
+}
+#calendar .weekend td:last-child {
+    color: #0000bb;
 }
 
 #calendar .past {
