@@ -3,7 +3,7 @@
 {{ define "content" }}
     <h1>{{ .Title }}</h1>
     <div id="reservations">
-        <h3>For reservations and other information, call or email {{ .Params.person }}:</h3>
+        <h3>For reservations and other information, contact {{ .Params.person }}:</h3>
         <h4>{{ .Params.phone }}</h4>
         <h4><a href='mailto:"{{ .Params.person }}" <{{ .Params.email }}>'>{{ .Params.email }}</a></h4>
     </div>

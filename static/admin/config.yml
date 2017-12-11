@@ -93,6 +93,20 @@ collections:
         fields:
           - {label: Title, name: title, widget: hidden, default: "Calendar"}
           - {label: Description, name: body, widget: markdown, required: false}
+  - name: "contact.md"
+    label: "Contact Info"
+    files:
+      - file: "content/contact/_index.md"
+        label: "Contact"
+        name: "contact.md"
+        fields:
+          - {label: Title, name: title, widget: hidden, default: "Contact"}
+          - {label: Contact Person, name: person, widget: string, required: false}
+          - {label: Phone, name: phone, widget: string, required: false}
+          - {label: Email, name: email, widget: string, required: false}
+          - {label: Address, name: address1, widget: string, required: false}
+          - {label: Address, name: address2, widget: markdown, required: false}
+          - {label: Directions, name: directions, widget: text, required: false}
   # - name: "publicshows_index.md"
   #   label: "Public Shows Intro"
   #   files:
