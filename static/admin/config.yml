@@ -18,21 +18,38 @@ collections:
       - {label: "Brief description of image", name: "imageALT", widget: "string", required: false}
       - {label: "Order to Appear in List", name: "weight", widget: "number", default: 1}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+
   - name: "calendar"
     label: "Calendar"
-    folder: "content/calendar/collection"
-    create: true
-    fields:
-      - {label: "Test", name: "title", widget: "string"}
-      - label: "August"
-        name: "08"
-        widget: "object"
+    files:
+      - file: "content/calendar/August.md"
+        label: "August"
+        name: "august"
         fields:
-          - {label: "08/01", name: "01", widget: string}
-          - {label: "08/02", name: "02", widget: string}
-          - {label: "08/03", name: "03", widget: string}
-          - {label: "08/04", name: "04", widget: string}
-          - {label: "08/05", name: "05", widget: string}
+          - {label: "Month", name: "title", widget: "hidden", default: "August"}
+          - label: "August"
+            name: "08"
+            widget: "object"
+            fields:
+              - {label: "08/01", name: "01", widget: string}
+              - {label: "08/02", name: "02", widget: string}
+              - {label: "08/03", name: "03", widget: string}
+              - {label: "08/04", name: "04", widget: string}
+              - {label: "08/05", name: "05", widget: string}
+      - file: "content/calendar/September.md"
+        label: "September"
+        name: "september"
+        fields:
+          - {label: "Month", name: "title", widget: "hidden", default: "September"}
+          - label: "September"
+            name: "09"
+            widget: "object"
+            fields:
+              - {label: "09/01", name: "01", widget: string}
+              - {label: "09/02", name: "02", widget: string}
+              - {label: "09/03", name: "03", widget: string}
+              - {label: "09/04", name: "04", widget: string}
+              - {label: "09/05", name: "05", widget: string}
   
   # - name: "publicshows"
   #   label: "Public Show"
