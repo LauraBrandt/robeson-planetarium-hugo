@@ -1,7 +1,8 @@
 ---
-date: 2017-11-12T15:45:15-03:00
-title: "Dr. Elizabeth Younce"
-position: "Supervisor, Assistant Superintendent of Curriculum & Instruction"
-phone: "910-735-2370"
+title: Dr. Robert Locklear
+position: 'Assistant Superintendent of Curriculum, Instruction, and Accountability'
+phone: 910-671-6000 ext. 3301
+email: robert.locklear@robeson.k12.nc.us
 weight: 4
 ---
+
