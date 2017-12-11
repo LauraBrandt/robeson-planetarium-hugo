@@ -260,14 +260,18 @@ header .col {
 		margin-top: 5%;
 		margin-bottom: 7%;
 	}
-	#affiliates .one { max-width: 25%; }
+
+	#affiliates {
+		display: none;
+	}
+	/* #affiliates .one { max-width: 25%; }
 	#affiliates .two { max-width: 22.5%; }
 	#affiliates .three { max-width: 50%; }
 	#affiliates .four { max-width: 34%; }
-	#affiliates .five { max-width: 34%; }
+	#affiliates .five { max-width: 34%; } */
 
-	#copyright p {
+	/* #copyright p {
 		margin-top: 7%;
 		margin-bottom: 7%;
-	}
+	} */
 }
