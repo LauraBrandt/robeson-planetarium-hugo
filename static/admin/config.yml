@@ -21,6 +21,7 @@ collections:
 
   - name: "calendar"
     label: "Calendar"
+    #delete: false
     files:
       - file: "content/calendar/August.md"
         label: "August"
@@ -49,7 +50,7 @@ collections:
               - {label: "09/02", name: "02", widget: string}
               - {label: "09/03", name: "03", widget: string}
               - {label: "09/04", name: "04", widget: string}
-              - {label: "09/05", name: "05", widget: string}
+              - {label: "09/05", name: "05", widget: string}              
   
   # - name: "publicshows"
   #   label: "Public Show"
