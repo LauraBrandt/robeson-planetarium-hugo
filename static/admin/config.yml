@@ -560,6 +560,7 @@ collections:
           - {label: Description, name: body, widget: markdown, required: false}
   - name: "calendar_index.md"
     label: "Calendar Intro"
+    delete: false
     files:
       - file: "content/calendar/_index.md"
         label: "Calendar"
@@ -569,6 +570,7 @@ collections:
           - {label: Description, name: body, widget: markdown, required: false}
   - name: "contact.md"
     label: "Contact Info"
+    delete: false
     files:
       - file: "content/contact/_index.md"
         label: "Contact"
@@ -583,6 +585,7 @@ collections:
           - {label: Directions, name: directions, widget: text, required: false}
   # - name: "publicshows_index.md"
   #   label: "Public Shows Intro"
+  #   delete: false
   #   files:
   #     - file: "content/publicshows/_index.md"
   #       label: "Public Shows"
@@ -592,6 +595,7 @@ collections:
   #         - {label: Description, name: body, widget: markdown, required: false}
   - name: "resources_index.md"
     label: "Resources Intro"
+    delete: false
     files:
       - file: "content/resources/_index.md"
         label: "Resources"
@@ -601,6 +605,7 @@ collections:
           - {label: Description, name: body, widget: markdown, required: false}
   # - name: "sciencecenter_index.md"
   #   label: "Science Center Intro"
+  #   delete: false
   #   files:
   #     - file: "content/sciencecenter/_index.md"
   #       label: "Science Center"
