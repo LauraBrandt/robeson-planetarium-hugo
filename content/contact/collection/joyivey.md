@@ -1,7 +1,7 @@
 ---
-date: 2017-11-12T18:43:18.000Z
 title: Joy Ivey
 position: Secretary
+phone: 910-671-6000 ext. 3381
 email: joy.ivey@robeson.k12.nc.us
 weight: 2
 ---
