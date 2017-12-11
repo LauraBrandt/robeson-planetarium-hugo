@@ -57,7 +57,7 @@
                         {{ .Params.event }}
                     {{ end }} -->
                     {{ range $i, $e := $events }}
-                        {{ if eq $i (string (printf "%02d" $day)) }}
+                        {{ if eq $i (printf "%02d" $day) }}
                             {{ $e }}
                         {{ end }}
                     {{ end }}
