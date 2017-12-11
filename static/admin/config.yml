@@ -23,13 +23,13 @@ collections:
     label: "Calendar"
     delete: false
     files:
-      - file: "content/calendar/August.md"
+      - file: "content/calendar/August.json"
         label: "August"
         name: "august"
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "August"}
           - label: "August"
-            name: "08"
+            name: "events"
             widget: "object"
             fields:
               - {label: "08/01", name: "01", widget: string}
@@ -69,7 +69,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "September"}
           - label: "September"
-            name: "09"
+            name: "events"
             widget: "object"
             fields:
               - {label: "09/01", name: "01", widget: string}
@@ -108,7 +108,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "October"}
           - label: "October"
-            name: "10"
+            name: "events"
             widget: "object"
             fields:
               - {label: "10/01", name: "01", widget: string}
@@ -148,7 +148,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "November"}
           - label: "November"
-            name: "11"
+            name: "events"
             widget: "object"
             fields:
               - {label: "11/01", name: "01", widget: string}
@@ -187,7 +187,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "December"}
           - label: "December"
-            name: "12"
+            name: "events"
             widget: "object"
             fields:
               - {label: "12/01", name: "01", widget: string}
@@ -227,7 +227,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "January"}
           - label: "January"
-            name: "01"
+            name: "events"
             widget: "object"
             fields:
               - {label: "01/01", name: "01", widget: string}
@@ -267,7 +267,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "February"}
           - label: "February"
-            name: "02"
+            name: "events"
             widget: "object"
             fields:
               - {label: "02/01", name: "01", widget: string}
@@ -305,7 +305,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "March"}
           - label: "March"
-            name: "03"
+            name: "events"
             widget: "object"
             fields:
               - {label: "03/01", name: "01", widget: string}
@@ -345,7 +345,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "April"}
           - label: "April"
-            name: "04"
+            name: "events"
             widget: "object"
             fields:
               - {label: "04/01", name: "01", widget: string}
@@ -384,7 +384,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "May"}
           - label: "May"
-            name: "05"
+            name: "events"
             widget: "object"
             fields:
               - {label: "05/01", name: "01", widget: string}
@@ -424,7 +424,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "June"}
           - label: "June"
-            name: "06"
+            name: "events"
             widget: "object"
             fields:
               - {label: "06/01", name: "01", widget: string}
@@ -463,7 +463,7 @@ collections:
         fields:
           - {label: "Month", name: "title", widget: "hidden", default: "July"}
           - label: "July"
-            name: "07"
+            name: "events"
             widget: "object"
             fields:
               - {label: "07/01", name: "01", widget: string}
