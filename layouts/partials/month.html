@@ -12,6 +12,8 @@
 {{ $daysPerMonth := dict "1" (seq 31) "2" (seq 28) "2-leap" (seq 29) "3" (seq 31) "4" (seq 30) "5" (seq 31) "6" (seq 30) "7" (seq 31) "8" (seq 31) "9" (seq 30) "10" (seq 31) "11" (seq 30) "12" (seq 31) }}
 {{ $daysThisMonth := index $daysPerMonth (string $month) }}
 
+{{ $events:= ($context.Site.GetPage "page" (printf "calendar/%s.md" $monthInLetters)).Params.events }}
+
 <table class="table table-hover table-bordered" id="{{ $monthInLetters }}">
     <thead>
         <tr data-toggle="collapse" data-target="#{{ $monthInLetters }}-collapse">
@@ -44,14 +46,20 @@
                 </td>
                 <td>
                     <!-- 
-                    Two methods to get the content for each date:
+                    Methods to get the content for each date:
                     1) use the .toml files in the data/ folder and enter the text for each day
                     2) create an entry in the content/calendar/ folder named YYYY-MM-DD.md and in front matter "event" enter the text for that day
+                    3) Each month has a file, e.g. August.md, which has an 'events' object, with the format day: event
                     -->
 
                     <!-- {{ index (index $context.Site.Data.calendar (printf "m%d" $month)) (string $day) }} -->
-                    {{ with $context.Site.GetPage "page" (printf "calendar/%s.md" $dateString) }}
+                    <!-- {{ with $context.Site.GetPage "page" (printf "calendar/%s.md" $dateString) }}
                         {{ .Params.event }}
+                    {{ end }} -->
+                    {{ range $i, $e := $events }}
+                        {{ if eq $i (string $day) }}
+                            {{ $e }}
+                        {{ end }}
                     {{ end }}
                 </td>
             </tr>            
